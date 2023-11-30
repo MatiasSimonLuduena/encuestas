@@ -1,0 +1,127 @@
+.container h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 400;
+  color: gray;
+  position: absolute;
+  bottom: 10px;
+}
+.container .questions {
+  margin: 35px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: cont 1s forwards;
+  animation-delay: 0.1s;
+  opacity: 0;
+}
+.container .questions .question {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.3em;
+  color: rgb(80, 80, 80);
+}
+.container .questions .correcta {
+  color: gray;
+  margin: 0;
+  font-size: 0.9em;
+}
+.container .questions .res {
+  margin-top: 25px;
+  width: 100%;
+  max-width: 500px;
+}
+.container .questions .res p {
+  color: rgb(80, 80, 80);
+  font-size: 1.2em;
+  font-weight: 600;
+  cursor: pointer;
+}
+.container .questions .res p:hover {
+  background-color: rgb(200, 200, 200);
+}
+.container .questions span {
+  color: gray;
+  font-size: 0.8em;
+  margin: 15px 0 8px;
+}
+.container .questions textarea {
+  width: 90%;
+  max-width: 600px;
+  height: 60px;
+}
+.container .questions .button {
+  width: 90%;
+  max-width: 600px;
+  margin-top: 15px;
+  border: none;
+  background-color: rgb(25, 178, 184);
+  color: #fff;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.container .questions .buttonNone {
+  width: 90%;
+  max-width: 600px;
+  margin-top: 15px;
+  border: none;
+  background-color: gray;
+  color: #fff;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+@media (min-width: 400px) {
+  .container h1 {
+    font-size: 2em;
+  }
+}
+@media (min-width: 600px) {
+  .container h1 {
+    margin-top: 60px;
+    font-size: 2.2em;
+  }
+  .container .questions .question {
+    font-size: 1.6em;
+  }
+  .container .questions .res p {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 900px) {
+  .container h1 {
+    margin-top: 60px;
+  }
+  .container .questions .res p {
+    font-size: 1.4em;
+  }
+}
+@keyframes cont {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes h1 {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */
